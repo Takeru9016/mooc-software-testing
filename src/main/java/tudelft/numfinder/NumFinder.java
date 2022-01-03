@@ -1,10 +1,12 @@
 package tudelft.numfinder;
 
+import org.jetbrains.annotations.NotNull;
+
 public class NumFinder {
     private int smallest = Integer.MAX_VALUE;
     private int largest = Integer.MIN_VALUE;
 
-    public void find(int[] nums) {
+    public void find(@NotNull int[] nums) {
         for(int n : nums) {
 
             if(n < smallest)
